@@ -8,6 +8,8 @@ by: Syon Mansur
 ## Overview
 This repository contains a MATLAB pipeline designed to identify and analyze "concept cells" within the Frontal Cortex (FC). While these units are well-documented in the Medial Temporal Lobe (MTL), this project focuses on a novel identification and characterization of similar selective responses in frontal regions using the ZETA-test protocol.
 
+Note that the code includes a method using 
+
 ---
 
 ## Pipeline Architecture
@@ -26,6 +28,10 @@ The analysis follows a five-step execution flow:
 ### Selectivity Detection (ZETA-test)
 Unit selectivity is determined using the ZETA-test, a parameter-free method that detects stimulus-evoked activity by comparing the observed spike-time distribution against a null-hypothesis linear distribution. This allows for robust detection of selective cells without the need for manual binning or arbitrary thresholds.
 For more information about the ZETA test, read the original paper here by Montjin et al. (https://elifesciences.org/articles/71969)
+
+*Note on Methodology*: This repository includes a Poisson-HMM implementation (`detectResponseProbabilistic.m`) developed for latency refinement. However, initial testing demonstrated that the ZETA-test provided more robust and effective results across diverse firing rates, and it was therefore selected for the final pipeline output.
+
+
 ### Anatomical Targeting
 The project specifically contrasts recorded units in the **Frontal Cortex** (including Anterior Cingulate and Orbitofrontal areas) against the **Medial Temporal Lobe** (Hippocampus, Amygdala, Entorhinal) to identify potential concept cell populations outside of traditional memory centers.
 
