@@ -1,0 +1,20 @@
+# --- Data Files ---
+*.mat
+*.xlsx
+*.csv
+*.bin
+*.dat
+
+# --- MATLAB Temp Files ---
+*.asv
+*.m~
+*.slxc
+*.mex*
+.SimulinkProject/
+_autosave*
+
+# --- OS / IDE Files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
