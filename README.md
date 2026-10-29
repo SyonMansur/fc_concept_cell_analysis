@@ -6,9 +6,7 @@ by: Syon Mansur
 ---
 
 ## Overview
-This repository contains a MATLAB pipeline designed to identify and analyze "concept cells" within the Frontal Cortex (FC). While these units are well-documented in the Medial Temporal Lobe (MTL), this project focuses on a novel identification and characterization of similar selective responses in frontal regions using the ZETA-test protocol.
-
-Note that the code includes a method using 
+This repository contains a MATLAB pipeline designed to identify and analyze "concept cells" within the Frontal Cortex (FC). While these units are well-documented in the Medial Temporal Lobe (MTL), this project focuses on a novel identification and characterization of similar selective responses in frontal regions using the ZETA-test protocol. Additional code analyzes the EEG signals recorded by the Behnke-Fried electrode implants.
 
 ---
 
